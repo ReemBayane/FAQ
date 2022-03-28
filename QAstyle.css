@@ -1,0 +1,82 @@
+
+    body{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .faq-heading{
+        padding: 30px 10px;
+        margin: auto;
+        font-weight: bolder;
+        text-align:center;
+        margin-bottom: 100px;
+        
+    }
+    .faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    }
+    .hr-line{
+      width: 85%;
+      margin: auto;
+      border-color: bisque;
+      
+    }
+  
+    .faq-page {
+    
+        color:cornflowerblue;
+        cursor: pointer;
+        padding: 30px 10px;
+        width: 60%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin: auto;
+    
+    }
+    .faq-body{
+        margin: auto;
+       width: 50%; 
+       padding: auto;
+       
+    }
+    
+    
+    .active,.faq-page:hover {
+        background-color:lightblue;
+    }
+    
+  
+    .faq-body {
+        padding: 10px 20px;
+        background-color:white;
+        border-radius: 5%;
+        display: none;
+        overflow: hidden;
+        animation: fadeIn 8s;
+        line-height: 1.8em;
+        font-weight: bolder;
+        margin: auto;
+    }
+    @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+    
+    .faq-page:after {
+        content: '\02795';
+      font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .active:after {
+        content: "\2796";
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+      
+    }
